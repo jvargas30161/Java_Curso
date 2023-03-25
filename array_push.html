@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let frutas = ["Naranjas", "Pera", "Melón", "Sandía"]
+    console.log("El numero de elementos es: "+frutas.length)
+    console.log("Mostrar para: "+frutas[1])
+
+    //Agregar un elemento al final
+    let nuevoFinal=frutas.push("Piña")
+    let nuevoFinal2=frutas.push("Margo")
+    let nuevoFinal3=frutas.push("Ciruela")
+    let nuevoFinal4=frutas.push("Plátano")
+    let nuevoFinal5=frutas.push("Fresas")
+    let nuevoFinal6=frutas.push("Mango Ciruelo")
+    let nuevoFinal7=frutas.push("Kiwy")
+
+    //Eliminar ultimo elemento
+    let eliminarUltimo=frutas.pop()
+    
+    //Agregar al principio
+    let agregarPrincipio=frutas.unshift("Mamey","Aguacate","Pepinillo")
+    console.log("Se agrega Mamey")
+    console.log("Se agrega Aguacate")
+    console.log("Se agrega Pepinillo")
+    console.log("Se agrega Uva")
+    
+
+    //Eliminar primer elemento
+    let eliminarPrimero =frutas.shift()
+    console.log("Se eliminó Mamey ")
+    
+
+    
+
+    //Encontrar elemento en una posición.
+    let buscarElemento = frutas.indexOf("Aguacate")
+        console.log("Elemento encontrado: "+buscarElemento)
+
+    //Eliminar elemento por posisicón
+    let buscarElemento2=frutas.indexOf("Mango Ciruelo")
+    let eliminarPos=frutas.splice(buscarElemento2, 1)
+
+    frutas.forEach(function(elemento,indice,array){
+        //console.log("El elemento es: "+elemento)
+        //console.log("El indice es: "+indice)
+        //console.log("El array es: "+array)
+        console.log(indice,elemento)
+
+    })
+
+    //Copiar el array a otro 
+    let frutas2=[]
+    frutas2=frutas.slice();
+    console.log("Esto es de frutas 2")
+    frutas2.forEach(function(elemento,indice,array){
+        console.log(indice,elemento)
+    
+   })
+
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    //// Usando separadores lógicos para concatenar o unir: 
+
+    let edad=parseInt(prompt("Dame tu edad"))
+
+    if(edad<0){
+        alert("La edad no es válida debe ser mayor que cero")
+    }
+    else if(edad>=101){
+        alert("La edad no es válida, eres mayor de 100 años")
+    }
+
+    //Podemos usar concatenaciones a fin de evitar el código anterior.
+    let edad1=parseInt(prompt("Dame tu edad Ejemplo II"))
+    // operador y = &&
+    // operador ó = ||
+
+    if (edad1<=0 || edad1>=101) {
+        alert("La edad no es válida, debe ser mayor que cero y menor que 101 ")
+    }
+    else if(edad1>0 && edad1<=10){
+        alert("Erees un niño")
+    }
+    else if(edad1>11 && edad1<=17){
+        alert("Erees un adolescente")
+    }
+    else if(edad1>18 && edad1<=26){
+        alert("Eres un joven")
+    }
+    else if(edad1>27 && edad1<=35){
+        alert("Eres un Adulto")
+    }
+    else if(edad1>36 && edad1<=50){
+        alert("Eres un Adulto adulto adulto")
+    }
+       
+</script>
