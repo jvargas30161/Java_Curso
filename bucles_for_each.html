@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //Hacemos un ejemplo no usando  for each
+    console.log("Hacemos un ejemplo no usando  for each")
+    let frutas=["Naranjas", "Peras", "Melones", "Sandías"]
+    console.log(frutas.length)
+
+    for(x=0;x<frutas.length;x++)
+    {
+        console.log("frutas numero: "+x+"="+frutas[x])
+
+    }
+
+    //Hacemos un ejemplo similar al anterior usando for each
+    console.log("Hacemos un ejemplo similar al atnterior usando for each")
+    frutas.forEach(function(elemento, indice, array){
+    console.log(indice, elemento, array);
+    })
+
+
+    
+</script>

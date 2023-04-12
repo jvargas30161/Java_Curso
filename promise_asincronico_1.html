@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let x=10;
+    console.log("############# 1.- Primer proceso ############# ")
+
+    setTimeout(()=> {
+        x=x*3+2;
+        console.log("############# 2.- Segundo proceso ############# ")
+    }),100;
+
+    console.log("############# 3.- Tercer proceso ############# ")
+
+    ////No se estan mostrando en orden los resultados. En consola se está mostrando asi:
+    //############# 1.- Primer proceso #############
+    //############# 3.- Tercer proceso ############# 
+    //############# 2.- Segundo proceso #############
+
+</script>

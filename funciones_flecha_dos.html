@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Demo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //// Esto es un ejemplo....
+    console.log("Esto es un ejemplo")
+    const suma = (a,b) => {
+        console.log(a+b)
+    }
+    const resta = (a,b) => {
+        console.log(a-b)
+    }
+    suma(1500,15)
+    resta(1,15)
+
+
+    ///Esto es otro ejemplo sin funcion flecha 
+    console.log("Esto es otro ejemplo")
+    
+    function cuadrado(x){
+        console.log(x*x)
+    }
+    cuadrado(5)
+
+    ///Esto es el mismo ejemplo del cuadrado, con funcion flecha
+    console.log("Esto es un ejemplo con funcion flecha") 
+
+    const cuadrado2 = x => console.log(x*x)
+    cuadrado2(10)
+
+
+    ///Esto es el mismo ejemplo usando const
+    console.log("Esto es otro ejemplo usando const")
+
+    const suma1 = (a=50,b=100) => {
+        console.log(a+b)
+
+    }
+
+    suma1()//// si coloco valores aqui, estos los toma en cuenta para la ejecucion del programa.
+
+
+    
+</script>
